@@ -274,8 +274,8 @@ def generate_pdf(rows, summary="", output_path="timetable.pdf"):
 
 # 4. Top-Level Operational Execution Block
 if __name__ == "__main__":
-rows, summary = load_timetable("timetable.json")
-generate_pdf(rows, summary, output_path="my_timetable.pdf")
+    rows, summary = load_timetable("timetable.json")
+    generate_pdf(rows, summary, output_path="my_timetable.pdf")
 
 # Send email nudge only if receiver email is configured
 #receiver_email = os.getenv("RECEIVER_EMAIL")
