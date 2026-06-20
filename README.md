@@ -25,4 +25,20 @@ Built with a focus on MLOps and Generative AI, this dashboard helps students opt
 * **Deployment:** Streamlit Community Cloud
 
 ---
+
+## 📂 Folder Structure
+
+```text
+StudyPilot/
+├── .streamlit/             # App configuration (theme settings)
+├── app.py                  # Main Streamlit dashboard UI
+├── extract.py              # PDF text ingestion & JSON conversion
+├── planner.py              # Llama 3.1 AI planning & scheduling
+├── pdf_export.py           # ReportLab PDF timetable generator
+├── reminder.py             # Email notification logic
+├── style.css               # Custom Minimal Aurora UI styles
+├── sample.pdf              # Example syllabus for testing
+├── requirements.txt        # Project dependencies
+└── syllabus_output.json    # Structured syllabus data
+
 *Created by [V Sree Kirthana]*
