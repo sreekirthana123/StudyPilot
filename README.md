@@ -23,7 +23,17 @@ Built with a focus on MLOps and Generative AI, this dashboard helps students opt
 * **Frontend:** Custom CSS/Minimal Aurora Theme
 * **Processing:** Data Orchestration Layer
 * **Deployment:** Streamlit Community Cloud
+---
 
+## 📂 Project Structure
+
+* **`app.py`**: The main entry point; manages the Streamlit UI, user interactions, and the 3-page navigation flow.
+* **`extract.py`**: The ingestion engine; uses `pdfplumber` and Llama 3.1 to convert unstructured syllabus PDFs into structured JSON data.
+* **`planner.py`**: The "brain." It calculates subject priorities based on exam proximity and weightage, then interfaces with Llama 3.1 via Groq API to generate the final study schedule.
+* **`pdf_export.py`**: Logic to convert the generated JSON timetable into a clean, printable PDF document.
+* **`reminder.py`**: Manages the logic for sending daily notifications to keep the user on track.
+* **`syllabus_output.json`**: The structured data file containing your subjects, chapters, and exam metadata.
+* **`timetable.json`**: The final output file containing your generated study schedule.
 ---
 
 ## 📂 Folder Structure
@@ -40,5 +50,7 @@ StudyPilot/
 ├── sample.pdf              # Example syllabus for testing
 ├── requirements.txt        # Project dependencies
 └── syllabus_output.json    # Structured syllabus data
+---
+
 
 *Created by [V Sree Kirthana]*
