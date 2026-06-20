@@ -52,7 +52,6 @@ StudyPilot/
 ├── sample.pdf              # Example syllabus for testing
 ├── requirements.txt        # Project dependencies
 └── syllabus_output.json    # Structured syllabus data
-
 ---
 
 ```
