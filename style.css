@@ -1,0 +1,145 @@
+/* =========================================
+THEME 2: MINIMAL AURORA (GLASSMORPHISM)
+   ========================================= */
+
+/* 1. The Aurora Background */
+.stApp {
+    /* Creates soft, glowing organic orbs of teal and blue in the background */
+    background-color: #F8FAFC !important;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(20, 184, 166, 0.1) 0px, transparent 50%) !important;
+    background-attachment: fixed !important;
+    font-family: 'Inter', sans-serif !important; 
+}
+
+/* 2. Frosted Glass Cards */
+/* This targets both the main profile card and the daily timetable cards */
+div[data-testid="stVerticalBlock"] > div.st-emotion-cache-1r6slb0,
+div.st-container { 
+    background: rgba(255, 255, 255, 0.6) !important; /* Highly transparent white */
+    backdrop-filter: blur(16px) !important; /* The frosty blur effect */
+    -webkit-backdrop-filter: blur(16px) !important; /* Safari support */
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important; /* Crisp white frosted edge */
+    box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.05) !important; /* Soft floating shadow */
+}
+
+/* Ensure the main wizard card has nice padding */
+div.st-emotion-cache-1r6slb0 { 
+    padding: 3rem !important; 
+}
+
+/* 3. Premium Typography (Keeping the anti-blur fixes) */
+h1, h2, h3 {
+    color: #0F766E !important; /* Deep, sophisticated Teal */
+    font-weight: 800 !important;
+    letter-spacing: -0.5px !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+p, span, div, label {
+    color: #334155 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+div[data-testid="stCaptionContainer"] p, 
+div[data-testid="stMarkdownContainer"] p {
+    opacity: 1 !important; 
+    font-weight: 500 !important; 
+    color: #475569 !important;
+    line-height: 1.6 !important;
+}
+
+/* 4. Inputs & Controls */
+div.st-emotion-cache-1wivp8b {
+    background-color: #E2E8F0 !important;
+}
+
+/* The Slider Thumb */
+div.st-emotion-cache-1w7v8e5 {
+    background-color: #0D9488 !important; /* Vibrant Teal */
+    border-radius: 50% !important;
+    box-shadow: 0 0 12px rgba(13, 148, 136, 0.4) !important; /* Glowing thumb */
+}
+
+/* Text Inputs and File Uploader */
+div.st-emotion-cache-16idsys input, div.st-emotion-cache-j7qwjr > div {
+    border-radius: 12px !important;
+    border: 1px solid rgba(15, 118, 110, 0.15) !important;
+    background: rgba(255, 255, 255, 0.8) !important; /* Slightly more opaque for readability */
+    color: #0F172A !important;
+    transition: all 0.3s ease !important;
+}
+
+div.st-emotion-cache-16idsys input:focus, div.st-emotion-cache-j7qwjr > div:hover {
+    border-color: #0D9488 !important;
+    box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.1) !important;
+}
+
+/* 5. Buttons */
+/* Primary Button (Aurora Gradient) */
+button.st-emotion-cache-19p0s0f.e14lo9b1 {
+    background: linear-gradient(135deg, #0D9488 0%, #0284C7 100%) !important; /* Teal to Blue gradient */
+    color: white !important;
+    border-radius: 12px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.25) !important;
+}
+
+button.st-emotion-cache-19p0s0f.e14lo9b1:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(13, 148, 136, 0.4) !important;
+    filter: brightness(1.1) !important;
+}
+
+/* Secondary Button (Start Over) */
+button[kind="secondary"] {
+    border-radius: 12px !important;
+    border: 1px solid rgba(148, 163, 184, 0.5) !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    backdrop-filter: blur(4px) !important;
+    transition: all 0.2s ease !important;
+}
+
+button[kind="secondary"]:hover {
+    border-color: #0D9488 !important;
+    color: #0D9488 !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Alert Boxes */
+.stAlert {
+    border-radius: 12px !important;
+    background: rgba(240, 253, 244, 0.7) !important; /* Soft mint */
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+/* 7. Main Outer Container & Separators */
+
+/* 7. The Guaranteed Glass Border */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border: 3px solid #0D9488 !important; /* The bold Teal border! */
+    box-shadow: 0 8px 32px 0 rgba(13, 148, 136, 0.3) !important; /* The Teal glow */
+    background: rgba(255, 255, 255, 0.6) !important; 
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-radius: 16px !important;
+    padding: 2rem !important;
+}
+
+
+/* Highlight the horizontal divider lines (st.divider) */
+hr {
+    border-bottom: 2px solid rgba(13, 148, 136, 0.3) !important;
+    border-radius: 2px !important;
+}
+
+
