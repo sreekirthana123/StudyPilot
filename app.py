@@ -4,6 +4,9 @@ from extract import extract_syllabus
 from planner import allocate_hours, generate_timetable, clean_json_response
 from pdf_export import generate_pdf, load_timetable
 from reminder import send_daily_nudge
+import streamlit as st
+# Add this right after st.set_page_config
+st.markdown("""<style>.stButton>button { background-color: #0D9488 !important; color: white !important; }</style>""", unsafe_allow_html=True)
 
 # 1. Page Config
 st.set_page_config(page_title="Study Pilot", page_icon="📚", layout="centered")
