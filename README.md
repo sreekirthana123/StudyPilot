@@ -4,25 +4,24 @@
 
 [**Access the Live App Here**](https://sree-kirthana-studypilot.streamlit.app/)
 
-Study Pilot is an intelligent, automated AI study assistant designed to transform raw course syllabus documents into structured, priority-weighted, and manageable daily study schedules. 
+Study Pilot is an intelligent, automated AI study assistant designed to transform raw course syllabus documents into structured, priority-weighted, and manageable daily study schedules.
 
-Built with a focus on MLOps and Generative AI, this dashboard helps students optimize their revision sessions based on upcoming deadlines and available daily time commitments.
+## 📂 Project Structure
 
-## 🚀 Key Features
-
-* **Intelligent Syllabus Extraction:** Parses messy PDF syllabus files into clean, actionable data.
-* **AI-Powered Planning:** Uses LLM-driven logic (via Groq Cloud) to break down massive workloads into bite-sized daily tasks.
-* **Dynamic Dashboard:** A modern, minimal, and responsive UI built with Streamlit.
-* **Optimized Revision:** Automatically prioritizes topics based on upcoming exam dates and individual study capacity.
-* **PDF Export:** Generate your custom study plan as a clean, printable PDF.
+* **`app.py`**: The main entry point; manages the Streamlit UI, user interactions, and the 3-page navigation flow.
+* **`extract.py`**: The ingestion engine; uses `pdfplumber` and Llama 3.1 to convert unstructured syllabus PDFs into structured JSON data.
+* **`planner.py`**: The "brain." It calculates subject priorities based on exam proximity and weightage, then interfaces with Llama 3.1 via Groq API to generate the final study schedule.
+* **`pdf_export.py`**: Logic to convert the generated JSON timetable into a clean, printable PDF document.
+* **`reminder.py`**: Manages the logic for sending daily notifications to keep the user on track.
+* **`syllabus_output.json`**: The structured data file containing your subjects, chapters, and exam metadata.
+* **`timetable.json`**: The final output file containing your generated study schedule.
 
 ## 🛠 Tech Stack
-
 * **Framework:** Streamlit
 * **AI/LLM:** Llama 3.1 (via Groq Cloud API)
-* **Frontend:** Custom CSS/Minimal Aurora Theme
-* **Processing:** Data Orchestration Layer
+* **Processing:** pdfplumber (Data Extraction)
 * **Deployment:** Streamlit Community Cloud
+
 ---
 
 ## 📂 Project Structure
