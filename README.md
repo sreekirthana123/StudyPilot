@@ -62,5 +62,15 @@ I’d love to hear your thoughts on **Study Pilot**! Whether it’s a feature su
 
 * *Connect with me:* [[My Linkedin Profile](https://www.linkedin.com/in/v-sree-kirthana-565b4a367?utm_source=share_via&utm_content=profile&utm_medium=member_android)]
 * *Share Feedback:* [Create a GitHub Issue](https://github.com/sreekirthana123/StudyPilot/issues/new)
+  
+---
+
+## 📜 License
+
+© 2026 V. Sree Kirthana. All rights reserved.  
+This project was developed as part of a hackathon submission at JBIET.  
+Unauthorized reproduction or distribution is not permitted without explicit consent from the author.
+
+---
 
 *Built by V Sree Kirthana*
