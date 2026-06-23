@@ -67,7 +67,7 @@ I’d love to hear your thoughts on **Study Pilot**! Whether it’s a feature su
 ## 📜 License
 
 © 2026 V. Sree Kirthana. All rights reserved.  
-This project was developed as part of a hackathon submission at JBIET.  
+This project was developed as part of a project.  
 Unauthorized reproduction or distribution is not permitted without explicit consent from the author.
 
 ---
