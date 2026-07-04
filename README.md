@@ -37,6 +37,7 @@ Study Pilot is an intelligent, automated AI study assistant designed to transfor
 * **`syllabus_output.json`**: The structured data file containing your subjects, chapters, and exam metadata.
 * **`timetable.json`**: The final output file containing your generated study schedule.
 ---
+<img width="1912" height="958" alt="Screenshot (1021)" src="https://github.com/user-attachments/assets/694363de-1dfd-472d-9663-e2880d2dd86e" />
 
 ## 📂 Folder Structure
 
