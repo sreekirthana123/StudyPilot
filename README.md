@@ -43,6 +43,9 @@ Study Pilot is an intelligent, automated AI study assistant designed to transfor
 
 <img width="1911" height="968" alt="Screenshot (1024)" src="https://github.com/user-attachments/assets/c0d71ae1-db59-4d7c-8849-bf7562c60e82" />
 
+<img width="1902" height="960" alt="Screenshot (1025)" src="https://github.com/user-attachments/assets/bb69d393-60ea-44b4-978b-d67c0ef31894" />
+
+
 
 
 ## 📂 Folder Structure
