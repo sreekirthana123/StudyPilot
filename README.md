@@ -1,5 +1,7 @@
-## 🚀 Built with Passion by
-# **V Sree Kirthana**
+<div align="center">
+  <p>🚀 Built with Passion by</p>
+  <h2>V Sree Kirthana</h2>
+</div>
 
 # 📚 Study Pilot
 
